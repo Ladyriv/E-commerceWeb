@@ -21,16 +21,15 @@ const SearchProducts = ({ product, setProduct}: SearchProductProps) => {
     return( 
         <div className="search-product">
             <Combobox>
-                <div className="justify-start sm:px-8 px-4 relative w-full">
-                    <ComboboxButton className="absolute top-[14px]">
+                <div className="justify-start sm:px-10 px-6 relative w-full min-w-full h-[35px]">
+                    <ComboboxButton className="absolute left-8 top-1.5">
                         <Image 
                             src='/search.svg'
-                            width={20}
-                            height={20}
-                            className="ml-4"
-                        />
+                            width={25}
+                            height={15}
+                            className="ml-3" alt={""}                        />
                     </ComboboxButton>
-                    <ComboboxInput className="search-product_input"
+                    <ComboboxInput className="search-product_input pl-[5%] pr-4 py-2 rounded-[8px]"
                         placeholder=""
                         displayValue={(product: string) => product}
                         onChange={(e) => setQuery(e.target.value)} 

@@ -4,7 +4,7 @@ import Footer from './Footer';
 import SearchBar from './SearchBar';
 import CustomFilter from './CustomFilter';
 import SearchProducts from './SearchProducts';
-
+import Beer from '../pages/beer';
 
 
 export {
@@ -13,5 +13,6 @@ export {
     SearchBar,
     CustomFilter,
     SearchProducts,
+    Beer,
     Footer
 }
