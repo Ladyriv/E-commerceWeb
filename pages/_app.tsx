@@ -1,17 +1,21 @@
-import '../styles/globals.css'; 
-import type { AppProps } from 'next/app';
+import React from 'react';
+import { CartProvider } from '@/context/CartContext';
+import App from 'next/app';
 import Navbar from '@/components/Navbar';
+import '@/styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+
     return (
-        <>
-           <Navbar />
-           <div className="pt-[150px]">
-            <Component {...pageProps} />
-           </div>
-           
-        </>
+      <CartProvider>
+        <Navbar />
+        <div className="pt-[150px]">
+          <Component {...pageProps} />
+        </div>
+      </CartProvider>
     );
+    }
 }
-
 export default MyApp;

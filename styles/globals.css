@@ -17,6 +17,9 @@
   h1 {
     @apply text-primary-yellow-default;
   }
+  h2 {
+    @apply text-3xl font-customBukagi mb-4 text-primary-yellow-default [text-shadow:_0_4px_4px_rgb(0_0_0_/.25)];
+  }
 }
 @font-face {
   font-family: 'Bukagi';
@@ -37,6 +40,8 @@
   box-sizing: 0;
 }
 
+
+
 /* Start : general styles :*/
 .max-width {
   @apply max-w-[1440px] mx-auto;
@@ -54,8 +59,16 @@
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+  @apply px-4 py-2 bg-primary-yellow-default text-black font-bold rounded hover:bg-gray-200 active:transform active:scale-95 active:shadow-inner transition-transform duration-150
 }
+.custom-btn-op {
+  @apply px-2 py-1 bg-white text-black font-bold rounded
+}
+
+.custom-icon {
+  filter: invert(82%) sepia(75%) saturate(3436%) hue-rotate(0deg) brightness(100%) contrast(95%);
+}
+
 /* END: General styles */
 
 .hero {
