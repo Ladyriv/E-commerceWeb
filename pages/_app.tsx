@@ -1,8 +1,9 @@
-import React from 'react';
+//import React from 'react';
 import { CartProvider } from '@/context/CartContext';
-import App from 'next/app';
+import App  from 'next/app';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
+
 
 class MyApp extends App {
   render() {
@@ -11,11 +12,11 @@ class MyApp extends App {
     return (
       <CartProvider>
         <Navbar />
-        <div className="pt-[150px]">
+        <div className="pt-[150px] flex flex-col min-h-screen">
           <Component {...pageProps} />
         </div>
       </CartProvider>
     );
-    }
+  }
 }
 export default MyApp;

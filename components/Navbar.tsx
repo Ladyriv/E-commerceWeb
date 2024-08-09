@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "@/context/CartContext";
+//import { useCart } from "@/context/CartContext";
+
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -19,7 +22,6 @@ const Navbar = () => {
             className="object-contain w-[100px] md:w-auto"
           />
         </Link>
-
         <div className="md:hidden flex items-center">
           <button
             className="p-2 text-primary-yellow-300 rounded-md outline-none focus:border-yellow-400 filter invert sepia-[1] saturate-[10000%] hue-rotate-[10deg] brightness-[1] contrast-[1]"

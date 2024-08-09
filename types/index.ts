@@ -2,5 +2,15 @@ import { MouseEventHandler } from "react";
 
 export interface SearchProductProps {
     product: string;
-    setProduct: (product: string) => void;
+    setProduct: React.Dispatch<React.SetStateAction<string>>;
+    //setProduct: (product: string) => void;
+}
+
+export interface Product {
+    id: number;
+    name: string;
+    image: string;
+    price: number;
+    toLowerCase: () => string;
+    //description: string;
 }

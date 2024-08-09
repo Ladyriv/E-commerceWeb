@@ -3,34 +3,34 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col text-black mt-5 bg-primary-gray-200 border-t font-customHenju ">
-      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px6 py-14">
-        <div className="flex flex-col justify-start items-start gap-6">
-          <p>Facatativa-Cundinamarca</p>
-          <p>300 31245678</p>
+    <footer className="w-full text-black bg-primary-gray-200 border-t font-customHenju mt-auto">
+      <div className="flex max-md:flex-col flex-wrap justify-between gap-3 sm:px-8 px-4 py-6">
+        <div className="flex flex-col justify-start items-start gap-2">
+          <p className="text-sm">Facatativa-Cundinamarca</p>
+          <p className="text-sm">300 123456789</p>
         </div>
-        <div className="flex flex-col justify-start items-start gap-6">
+        <div className="flex flex-col justify-start items-start gap-2">
           <p>Envios gratis dentro del perimetro urbano</p>
         </div>
-        <div>
+        <div className="flex items-center gap-3">
             <Image 
                 src="/daviplata.svg"
                 alt= "logo"
-                width={80}
+                width={60}
                 height={10}
                 className="object-contain"
             />
             <Image 
                 src="/nequi.svg"
                 alt= "logo"
-                width={80}
+                width={60}
                 height={10}
                 className="object-contain"
             />
             <Image 
                 src="/mastercard.svg"
                 alt= "logo"
-                width={80}
+                width={60}
                 height={10}
                 className="object-contain"
             />

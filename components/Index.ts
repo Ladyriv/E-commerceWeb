@@ -6,16 +6,16 @@ import CustomFilter from './CustomFilter';
 import SearchProducts from './SearchProducts';
 import Beer from '../pages/beer';
 import Cart from '../pages/cart';
-import CustomButton from './CustomButton';
+import ProductId from '../pages/product/[id]';
 
 
 export {
     Hero,
     Navbar,
     SearchBar,
-    CustomButton,
     CustomFilter,
     SearchProducts,
+    ProductId,
     Beer,
     Cart,
     Footer

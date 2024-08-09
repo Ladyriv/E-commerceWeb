@@ -14,8 +14,19 @@ const ProductBeer: React.FC = () => {
   const beers = [
     { id: 1, name: 'Cerveza A', image: '/src/assets/img/Products-beers/Aguilasixpack.png', price: 13500 },
     { id: 2, name: 'Cerveza B', image: '/src/assets/img/Products-beers/Andinasixpack.png', price: 12600 },
-    { id: 2, name: 'Cerveza B', image: '/src/assets/img/Products-beers/Pokerlatamax.png', price: 12600 },
-    { id: 2, name: 'Cerveza B', image: '/src/assets/img/Products-beers/Andinasixpack.png', price: 12600 },
+    { id: 3, name: 'Cerveza C', image: '/src/assets/img/Products-beers/Pokerlatamax.png', price: 14600 },
+    { id: 4, name: 'Cerveza D', image: '/src/assets/img/Products-beers/aguila-lata-24.png', price: 19000 },
+    { id: 5, name: 'Cerveza D', image: '/src/assets/img/Products-beers/aguilalight-lata-6.png', price: 19000 },
+    { id: 6, name: 'Cerveza D', image: '/src/assets/img/Products-beers/Aguilalight-lata-24.png', price: 19000 },
+    { id: 7, name: 'Cerveza D', image: '/src/assets/img/Products-beers/clubcolombia-lata-6.png', price: 19000 },
+    { id: 8, name: 'Cerveza D', image: '/src/assets/img/Products-beers/clubcolombia-negra-lata-6.png', price: 19000 },
+    { id: 9, name: 'Cerveza D', image: '/src/assets/img/Products-beers/corona-6.png', price: 19000 },
+    { id: 10, name: 'Cerveza D', image: '/src/assets/img/Products-beers/coronalata-6-269ml.png', price: 19000 },
+    { id: 11, name: 'Cerveza D', image: '/src/assets/img/Products-beers/costena-bacana-lat.png', price: 19000 },
+    { id: 12, name: 'Cerveza D', image: '/src/assets/img/Products-beers/costena-lata-24.png', price: 19000 },
+    { id: 13, name: 'Cerveza D', image: '/src/assets/img/Products-beers/lightlimonlata.png', price: 19000 },
+
+
     // más productos de cerveza
   ];
 
@@ -26,7 +37,7 @@ const ProductBeer: React.FC = () => {
         {/*.map mapea el array 'beers' para renderizar sobre cada producto*/}
         {beers.map(beer => (
           <div key={beer.id} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-full max-w-xs">
-            <div className="w-full h-48 mb-4">
+            <div className="w-full h-52 mb-5">
               <img src={beer.image} alt={beer.name} className="w-full h-full object-cover rounded-md" />              
             </div>
             <h3 className="font-custom">{beer.name}</h3>

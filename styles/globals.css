@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-      @apply bg-primary-gray-default;
+      @apply bg-primary-gray-default min-h-screen flex flex-col;
       
   }
   html {
@@ -59,10 +59,14 @@
 }
 
 .custom-btn {
-  @apply px-4 py-2 bg-primary-yellow-default text-black font-bold rounded hover:bg-gray-200 active:transform active:scale-95 active:shadow-inner transition-transform duration-150
+  @apply px-4 py-2 mb-4 bg-primary-yellow-default text-black font-bold rounded hover:bg-gray-200 active:transform active:scale-95 active:shadow-inner transition-transform duration-150
 }
 .custom-btn-op {
   @apply px-2 py-1 bg-white text-black font-bold rounded
+}
+
+.custom-btn-del {
+  @apply px-2 py-1 bg-white text-black font-bold rounded hover:bg-red-500 active:transform active:scale-95 active:shadow-inner transition-transform duration-150
 }
 
 .custom-icon {
@@ -81,3 +85,41 @@
     text-wrap: balance;
   }
 }
+
+/* START: searchbar styles */
+.searchbar {
+  @apply flex items-center left-5 max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl
+}
+
+.searchbar__item {
+  @apply flex-1 max-sm:w-full flex justify-start items-center relative
+}
+
+.searchbar__input {
+  @apply w-full h-[48px] pl-12 p-4 bg-primary-yellow-200 rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
+}
+
+.search-product {
+  @apply flex-1 max-sm:w-full flex justify-start items-center 
+}
+
+.search-product_input {
+  @apply w-full py-2 pl-10 pr-4 text-sm leading-5 text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-yellow-200 focus:border-transparent 
+}
+
+.search-product_option {
+  @apply absolute w-full py-1 mt-1 overflow-auto text-base bg-white border border-gray-300 rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm 
+}
+/* END: searchbar styles */
+
+/* START: product page styles */
+
+.product-page{
+  @apply flex justify-center items-center min-h-full
+}
+
+.product-page_card {
+  @apply bg-primary-yellow-300 bg-opacity-10 backdrop-blur-lg p-8 border-2 border-primary-yellow-300 rounded-lg shadow-lg w-full max-w-lg md:max-w-3xl
+}
+
+/* END: searchbar styles */

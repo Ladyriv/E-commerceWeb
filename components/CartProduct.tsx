@@ -7,7 +7,7 @@ const CartProduct: React.FC = () => {
   return (
     <div className="flex justify-center items-center p-4">
       <div className="w-full max-w-4xl bg-white bg-opacity-50 backdrop-blur-lg shadow-md rounded-lg p-6">
-        <h2 className="border-b-2 border-gray-300 border-title pb-2">Resumen de su compra</h2>
+        <h2 className="border-b-2 border-gray-300 text-outlined pb-2 text-center">Resumen de su compra</h2>
         {cart.length === 0 ? (
           <p className="font-custom">El carrito está vacío</p>
         ) : (
@@ -23,6 +23,7 @@ const CartProduct: React.FC = () => {
                   <button
                     className="custom-btn-op"
                     onClick={() =>
+                      //incrementQuantity(item.id)
                       incrementQuantity(item.id, item.quantity + 1)
                     }
                   >
@@ -31,6 +32,7 @@ const CartProduct: React.FC = () => {
                   <button
                     className="custom-btn-op"
                     onClick={() =>
+                      //decrementQuantity(item.id)
                       decrementQuantity(item.id, item.quantity - 1)
                     }
                   >
@@ -42,7 +44,7 @@ const CartProduct: React.FC = () => {
                 </div>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="ml-4 mt-2 sm:mt-0 text-red-500"
+                  className="ml-4 mt-2 sm:mt-0 custom-btn-del"
                 >
                   Eliminar
                 </button>
