@@ -31,7 +31,9 @@ const SearchProducts = ({ product, setProduct }: SearchProductProps) => {
   return (
     <div className="search-product">
       <Combobox value={product} onChange={handleSelect}>
-        <div className="relative">
+        <div className="relative flex flex-wrap max-sm:flex-col max-sm:w-full">
+        <p className="mb-1 text-xl text-white font-custom max-sm:mb-4">Busca tu producto</p>
+        <div className="relative w-full">
           <ComboboxButton className="absolute inset-y-0 flex items-center pl-3">
             <Image 
               src='/search.svg'
@@ -42,11 +44,12 @@ const SearchProducts = ({ product, setProduct }: SearchProductProps) => {
             />
           </ComboboxButton>
           <ComboboxInput 
-            className="search-product_input"
+            className="search-product_input pl-12"
             placeholder="Buscar productos..."
             displayValue={(product: string) => product}
             onChange={(e) => setQuery(e.target.value)} 
           />
+        </div>          
           <Transition
             leave="transition ease-in duration-100"
             leaveFrom="opacity-100"
@@ -56,7 +59,7 @@ const SearchProducts = ({ product, setProduct }: SearchProductProps) => {
               {filteredProducts.length === 0 && query !== "" ? (
                 <ComboboxOption 
                   value={query}
-                  className="search-product_input"
+                  className="search-product_input select-none data-[focus]:bg-white/10"
                 >
                   Crear "{query}"
                 </ComboboxOption>

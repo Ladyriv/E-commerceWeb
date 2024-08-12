@@ -7,6 +7,7 @@ export interface SearchProductProps {
 }
 
 export interface Product {
+    category: string;
     id: number;
     name: string;
     image: string;

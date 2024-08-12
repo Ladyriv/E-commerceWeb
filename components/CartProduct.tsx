@@ -4,6 +4,19 @@ import { useCart } from '@/context/CartContext';
 const CartProduct: React.FC = () => {
   const { cart, incrementQuantity, decrementQuantity,  removeFromCart, getTotal } = useCart(); // El hook useCart obtiene el estado y funciones del carrito
 
+  // Función para generar el mensaje de resumen de compras
+  const generateWhatsAppMessage = () => {
+    let message = "Hola, Este es mi Resumen de compras:\n\n";
+    cart.forEach((item, index) => {
+      message += `${index + 1}. ${item.name} - $${item.price} x ${item.quantity}\n`;
+    });
+    message += `\nTotal: $${getTotal()}`;
+    return encodeURIComponent(message);
+  };
+
+  // Número de WhatsApp donde se enviará el mensaje
+  const whatsappNumber = "+573204624610";
+  
   return (
     <div className="flex justify-center items-center p-4">
       <div className="w-full max-w-4xl bg-white bg-opacity-50 backdrop-blur-lg shadow-md rounded-lg p-6">
@@ -54,6 +67,16 @@ const CartProduct: React.FC = () => {
         )}
         <div className="mt-4">
           <h3 className="text-xl font-bold">Total: ${getTotal()}</h3>
+        </div>
+        <div className="mt-4 flex justify-center">
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=${generateWhatsAppMessage()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700 transition duration-300"
+            >
+              Envíar tu pedido
+            </a>
         </div>
       </div>
     </div>

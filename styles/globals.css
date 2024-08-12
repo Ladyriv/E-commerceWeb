@@ -88,11 +88,11 @@
 
 /* START: searchbar styles */
 .searchbar {
-  @apply flex items-center left-5 max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl
+  @apply flex items-center left-5 mb-12 max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
 }
 
 .searchbar__item {
-  @apply flex-1 max-sm:w-full flex justify-start items-center relative
+  @apply flex-1 max-sm:w-full flex justify-start items-center relative;
 }
 
 .searchbar__input {
@@ -100,15 +100,15 @@
 }
 
 .search-product {
-  @apply flex-1 max-sm:w-full flex justify-start items-center 
+  @apply flex-initial mt-5 max-sm:w-full flex justify-start items-center max-sm:flex-col; 
 }
 
 .search-product_input {
-  @apply w-full py-2 pl-10 pr-4 text-sm leading-5 text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-yellow-200 focus:border-transparent 
+  @apply w-full py-3 pl-12 pr-4 text-sm leading-5 text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-yellow-200 focus:border-transparent;
 }
 
 .search-product_option {
-  @apply absolute w-full py-1 mt-1 overflow-auto text-base bg-white border border-gray-300 rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm 
+  @apply absolute w-full py-1 mt-1 overflow-auto text-base bg-white border border-gray-300 rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
 }
 /* END: searchbar styles */
 

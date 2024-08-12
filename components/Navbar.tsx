@@ -54,7 +54,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/cart" className="block px-2 py-1 text-primary-yellow-default">
+              <Link href="/cart" className="block px-2 py-1 text-primary-yellow-default active:transform active:scale-95 active:shadow-inner transition-transform duration-150">
                 <Image 
                   src="/carrito-de-compras.svg"
                   alt= "logo"
@@ -95,7 +95,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="mb-2 md:mb-0">
-              <Link href="/cart" className="block px-2 py-1" onClick={() => setIsNavbarOpen(false)}>
+              <Link href="/cart" className="block px-2 py-1 active:transform active:scale-95 active:shadow-inner transition-transform duration-150" onClick={() => setIsNavbarOpen(false)}>
                 Carrito
               </Link>
             </li>
