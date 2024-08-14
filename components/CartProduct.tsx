@@ -15,7 +15,7 @@ const CartProduct: React.FC = () => {
   };
 
   // Número de WhatsApp donde se enviará el mensaje
-  const whatsappNumber = "+573204624610";
+  const whatsappNumber = "+57301234567";
   
   return (
     <div className="flex justify-center items-center p-4">
