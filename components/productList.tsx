@@ -25,9 +25,9 @@ const ProductList: React.FC<ProductListProps> = ({title, products}) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/*.map mapea el array 'beers' para renderizar sobre cada producto*/}
         {products.map(product => (
-          <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-full max-w-xs">
-            <div className="w-full h-52 mb-5">
-              <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-md" />              
+          <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-full max-w-sm">
+            <div className="w-full mx-auto h-52 mb-5 mt-2 flex items-center justify-center">
+              <img src={product.image} alt={product.name} className="w-full h-full max-w-[200px] max-h-[200px] object-contain rounded-md" />              
             </div>
             <h3 className="font-custom">{product.name}</h3>
             <p className="font-customHenju font-semibold">${product.price}</p>

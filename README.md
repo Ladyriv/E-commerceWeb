@@ -1,3 +1,29 @@
+
+# E-commerce
+
+Este proyecto es una aplicación de comercio electrónico para la venta de licores, desarrollada con React, Typescript y Next.js) y Tailwind CSS para el diseño responsivo. La aplicación permite a los usuarios navegar por diferentes categorías de productos, agregar items al carrito y realizar compras.
+
+# Descripción
+
+Esta aplicación de e-commerce está diseñada para ofrecer una experiencia de usuario intuitiva y fluida en la compra de licores. Los usuarios pueden explorar una amplia variedad de productos, visualizar detalles específicos, y gestionar su carrito de compras. El proyecto está optimizado para dispositivos móviles y de escritorio.
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_WHATSAPP_API=your_whatsapp_api_key`
+
+
+
+## Tecnologías
+
+- React
+- Next.js 14
+- Typescript
+- Tailwind CSS
+
+## Installation
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +60,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Authors
+
+- [@Ladyriv](https://www.github.com/ladyriv)
