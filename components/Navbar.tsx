@@ -96,7 +96,7 @@ const Navbar = () => {
             </li>
             <li className="mb-2 md:mb-0">
               <Link href="/cart" className="block px-2 py-1 active:transform active:scale-95 active:shadow-inner transition-transform duration-150" onClick={() => setIsNavbarOpen(false)}>
-                Carrito
+                Su resúmen de compras
               </Link>
             </li>
           </ul>

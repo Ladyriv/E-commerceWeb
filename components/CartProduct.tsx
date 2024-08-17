@@ -15,7 +15,16 @@ const CartProduct: React.FC = () => {
   };
 
   // Número de WhatsApp donde se enviará el mensaje
-  const whatsappNumber = "+57301234567";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+
+  const handleWhatsAppClick = () => {
+    const message = generateWhatsAppMessage();
+    if (whatsappNumber) {
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    } else {
+      console.error('Número de WhatsApp no configurado correctamente.');
+    }
+  };
   
   return (
     <div className="flex justify-center items-center p-4">
@@ -28,10 +37,10 @@ const CartProduct: React.FC = () => {
             {cart.map((item) => (
               <li
                 key={item.id}
-                className="flex flex-col sm:flex-row justify-between items-center border-b py-4"
+                className="flex flex-col sm:flex-row space-x-6 justify-between items-center border-b py-4"
               >
                 <span>{item.name}</span>
-                <div className="flex items-center space-x-2 mt-2 sm:mt-0">
+                <div className="flex items-start space-x-2 mt-2 sm:mt-0">
                   <span className="text-lg">{item.quantity}</span>
                   <button
                     className="custom-btn-op"
@@ -69,14 +78,13 @@ const CartProduct: React.FC = () => {
           <h3 className="text-xl font-bold">Total: ${getTotal()}</h3>
         </div>
         <div className="mt-4 flex justify-center">
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${generateWhatsAppMessage()}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleWhatsAppClick}
+              rel="button send"
               className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700 transition duration-300"
             >
               Envíar tu pedido
-            </a>
+            </button>
         </div>
       </div>
     </div>

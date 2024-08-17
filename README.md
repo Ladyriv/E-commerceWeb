@@ -12,7 +12,7 @@ Esta aplicación de e-commerce está diseñada para ofrecer una experiencia de u
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`NEXT_PUBLIC_WHATSAPP_API=your_whatsapp_api_key`
+`NEXT_PUBLIC_WHATSAPP_NUMBER=NUMBER`
 
 
 

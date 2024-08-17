@@ -9,9 +9,11 @@ import Vodka from '../pages/vodka';
 import Other from '../pages/others';
 import Cart from '../pages/cart';
 import ProductId from '../pages/product/[id]';
+import Modal from './Modal';
 
 
 export {
+    Modal,
     Hero,
     Navbar,
     SearchBar,
