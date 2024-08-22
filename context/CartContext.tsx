@@ -58,7 +58,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       } else {
         return [...prevCart, { ...item, quantity: 1 }];
       }
-    });
+    });    
   };
 
   // Función que permite incrementar la cantidad de un ítem

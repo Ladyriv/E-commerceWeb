@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { CartContext } from '@/context/CartContext';
 import { Product } from '@/types';
+import { toast } from 'react-hot-toast';
 
 
 interface ProductListProps {
@@ -17,13 +18,13 @@ const ProductList: React.FC<ProductListProps> = ({title, products}) => {
   }
   // addToCart se extrae del contexto
   const { addToCart } = cartContext;
-
-
+  
+  
   return (
     <div className="flex flex-col items-center">
       <h2 className="sm:text-[40px] text-[25px]">{title}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/*.map mapea el array 'beers' para renderizar sobre cada producto*/}
+        {/*.map mapea el array 'beers, vodkas, others' para renderizar sobre cada producto*/}
         {products.map(product => (
           <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-full max-w-sm">
             <div className="w-full mx-auto h-52 mb-5 mt-2 flex items-center justify-center">

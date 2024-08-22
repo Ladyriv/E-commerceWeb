@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 import VerificationModal from '@/components/Modal';
+import { Toaster } from 'react-hot-toast';
 
 function MyApp({ Component, pageProps }: any) {
   const [showModal, setShowModal] = useState(true);
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }: any) {
 
   return (
     <CartProvider>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Navbar />
       {router.pathname === '/' && showModal && (
         <VerificationModal onAccept={handleAccept} />

@@ -1,20 +1,15 @@
 "use client";
 
-
 import { useState, useEffect } from 'react';
 import Hero from "@/components/Hero";
-//import SearchBar from "@/components/SearchBar";
-//import CustomFilter from "@/components/CustomFilter";
 import Navbar from "@/components/Navbar";
 import VerificationModal from "@/components/Modal";
-//import { ProductBeer } from "@/components/Index";
-
 
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(true); //  El modal se renderiza condicionalmente en función de showModal
 
-  useEffect(() => {
+  useEffect(() => {      // Asegura de que el modal solo se muestre en la página de inicio
     if (window.location.pathname !== '/') {
       setShowModal(false);
     }

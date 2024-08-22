@@ -4,6 +4,8 @@ import { products } from '@/constants';
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
 import '@/styles/globals.css';
+import { toast } from 'react-hot-toast';
+
 
 const ProductPage = () => {
   const router = useRouter();
@@ -23,6 +25,7 @@ const ProductPage = () => {
       image: product.image,
       price: product.price,
     });
+    toast.success(`${product.name} se agregó al carrito`);
   };
 
   return (

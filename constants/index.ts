@@ -11,13 +11,13 @@ export const products: Product[] = [
     { id: 5, name: 'Cerveza Aguila Light en Lata x 6', image: '/src/assets/img/Products-beers/aguilalight-lata-6.png', price: 29000, category: 'beer', toLowerCase: () => 'cerveza light lata x 6' },
     { id: 6, name: 'Cerveza Aguila Ligth en Lata x 24', image: '/src/assets/img/Products-beers/Aguilalight-lata-24.png', price: 86000, category: 'beer', toLowerCase: () => 'cerveza light lata x 24' },
     { id: 7, name: 'Cerveza Club Colombia Sixpack', image: '/src/assets/img/Products-beers/clubcolombia-lata-6.png', price: 21000,  category: 'beer', toLowerCase: () => 'cerveza club colombia sixpack' },
-    { id: 8, name: 'Club Colombia negra Sixpack', image: '/src/assets/img/Products-beers/clubcolombia-negra-lata-6.png', price: 23000,  category: 'beer', toLowerCase: () => 'club colombia negra sixpack' },
+    { id: 8, name: 'Club Colombia Negra Sixpack', image: '/src/assets/img/Products-beers/clubcolombia-negra-lata-6.png', price: 23000,  category: 'beer', toLowerCase: () => 'club colombia negra sixpack' },
     { id: 9, name: 'Cerveza Corona Sixpack', image: '/src/assets/img/Products-beers/corona-6.png', price: 21000,  category: 'beer', toLowerCase: () => 'cerveza corona x 6' },
-    { id: 10, name: 'Cerveza Corona en Lata x 6', image: '/src/assets/img/Products-beers/coronalata-6-269ml.png',  category: 'beer', price: 19.900, toLowerCase: () => 'cerveza corona lata x 6' },
+    { id: 10, name: 'Cerveza Corona en Lata x 6', image: '/src/assets/img/Products-beers/coronalata-6-269ml.png',  category: 'beer', price: 19900, toLowerCase: () => 'cerveza corona lata x 6' },
     { id: 11, name: 'Cerveza Costeña Bacana x 24', image: '/src/assets/img/Products-beers/costena-bacana-lat.png', price: 66000,  category: 'beer',toLowerCase: () => 'cerveza costeña bacana x 24' },
     { id: 12, name: 'Cerveza Costeña x 24', image: '/src/assets/img/Products-beers/costena-lata-24.png', price: 60000,  category: 'beer', toLowerCase: () => 'cerveza costeña lata x 24' },
     { id: 13, name: 'Cerveza Light Limon Sixpack', image: '/src/assets/img/Products-beers/lightlimonlata.png', price: 23000,  category: 'beer', toLowerCase: () => 'cerveza light limon lata' },
-    { id: 14, name: 'Vodka Bacardi añejo', image: '/src/assets/img/Products-vodka/Bacardianejo.png', price: 62000,  category: 'vodka', toLowerCase: () => 'bacardi añejo' },
+    { id: 14, name: 'Vodka Bacardi añejo', image: '/src/assets/img/Products-vodka/BacardiAnejo.png', price: 62000,  category: 'vodka', toLowerCase: () => 'bacardi añejo' },
     { id: 15, name: 'Vodka Bacardi Carta Blanca', image: '/src/assets/img/Products-vodka/BacardiCartaBlanca.png', price: 65000,  category: 'vodka', toLowerCase: () => 'bacardi carta blanca' },
     { id: 16, name: 'Vodka Absolut', image: '/src/assets/img/Products-vodka/vodka-absolut-mandrin.png', price: 89000,  category: 'vodka', toLowerCase: () => 'vodka absolut' },
     { id: 17, name: 'Ginebra Bombay', image: '/src/assets/img/Products-vodka/ginebra-bombay.png', price: 152000,  category: 'vodka', toLowerCase: () => 'ginebra bombay' },
@@ -48,10 +48,5 @@ export const products: Product[] = [
     { id: 42, name: 'Tequila Don Julio 70', image: '/src/assets/img/Products-others/teq-donjulio70.png', price: 375000,  category: 'otro', toLowerCase: () => 'tequila don julio 70' },
     { id: 43, name: 'Tequila Jose Cuervo Especial', image: '/src/assets/img/Products-others/tequila-josecuervo-esp.png', price: 95000,  category: 'otro', toLowerCase: () => 'tequila jose cuervo especial' },
     { id: 44, name: 'Tequila Jose Cuervo', image: '/src/assets/img/Products-others/tequila-josecuervo.png', price: 85000,  category: 'otro', toLowerCase: () => 'tequila jose cuervo' },
-
-
-
-
-
 
 ]
