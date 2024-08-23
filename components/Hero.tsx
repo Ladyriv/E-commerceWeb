@@ -19,6 +19,7 @@ const Hero = () => {
               alt= "banner"
               layout="fill" 
               className="object-contain"
+              priority={true}
           />
         </div>        
       </div>      

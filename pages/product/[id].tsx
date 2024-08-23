@@ -36,7 +36,8 @@ const ProductPage = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-auto rounded-md"
+              loading="eager"
+              className="w-full h-auto rounded-md"              
             />
           </div>
           <div className="flex flex-col items-start space-y-4 mt-4 md:mt-0">

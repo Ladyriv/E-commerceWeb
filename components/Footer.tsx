@@ -19,6 +19,8 @@ const Footer = () => {
                 width={60}
                 height={10}
                 className="object-contain"
+                quality={75}
+                priority={true}
             />
             <Image 
                 src="/nequi.svg"
@@ -26,6 +28,8 @@ const Footer = () => {
                 width={60}
                 height={10}
                 className="object-contain"
+                quality={75}
+                priority={true}
             />
             <Image 
                 src="/mastercard.svg"
@@ -33,6 +37,8 @@ const Footer = () => {
                 width={60}
                 height={10}
                 className="object-contain"
+                quality={75}
+                priority={true}
             />
             
             

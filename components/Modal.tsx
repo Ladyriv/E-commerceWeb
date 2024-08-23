@@ -47,7 +47,7 @@ const VerificationModal =  ({ onAccept }: { onAccept: () => void }) => {
         </div>
         <button
           onClick={handleAccept}
-          className="px-4 py-2 bg-primary-yellow-200 text-black rounded-lg"
+          className="px-4 py-2 bg-primary-yellow-300 text-black rounded-lg active:transform active:scale-95 active:shadow-inner transition-transform duration-150"
         >
           Aceptar
         </button>

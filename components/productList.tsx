@@ -18,6 +18,15 @@ const ProductList: React.FC<ProductListProps> = ({title, products}) => {
   }
   // addToCart se extrae del contexto
   const { addToCart } = cartContext;
+  const handleAddToCart = (product: Product) => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      price: product.price
+    });
+    toast.success(`${product.name} agregado al carrito`);
+  };
   
   
   return (
@@ -28,11 +37,14 @@ const ProductList: React.FC<ProductListProps> = ({title, products}) => {
         {products.map(product => (
           <div key={product.id} className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-full max-w-sm">
             <div className="w-full mx-auto h-52 mb-5 mt-2 flex items-center justify-center">
-              <img src={product.image} alt={product.name} className="w-full h-full max-w-[200px] max-h-[200px] object-contain rounded-md" />              
+              <img src={product.image} alt={product.name} 
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-contain rounded-md" 
+                  loading="eager"
+              />              
             </div>
             <h3 className="font-custom">{product.name}</h3>
             <p className="font-customHenju font-semibold">${product.price}</p>
-            <button onClick={() => addToCart({ id: product.id, name: product.name, image: product.image, price: product.price })}
+            <button onClick={() => handleAddToCart(product)}
                     className='custom-btn'>
               Agregar al Carrito
             </button>
